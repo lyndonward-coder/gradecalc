@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <script src="gradecalc.js"></script>
+    <link href="gradecalc.css" rel="stylesheet">
+</head>
+<body>
+<h1>Calculate Your Grade!</h1>
+<h2>Separate individual score percentages with a comma and without spaces (ex: 21,29,78). </h2>
+<table id = "Grades" style="width:50%" align="center">
+    <tr>
+        <th>Category</th>
+        <th>Grade</th>
+        <th>Weight</th>
+    </tr>
+    <tr id = "1">
+        <td>Homework</td>
+        <td><input type="text" id ="homeworkGrade" placeholder = " Insert Grades" value="100,95,90"></td>
+        <td><input type="text" id ="homeworkWeight" placeholder = "Insert Weight" value = "10"></td>
+    </tr>
+    <tr id = "2">
+        <td>Projects</td>
+        <td><input type="text" id ="ProjectGrade" placeholder = "Insert Grades" value="89,85,80"></td>
+        <td><input type="text" id ="ProjectWeight" placeholder = "Insert Weight" value = "10"></td>
+    </tr>
+    <tr id = "3">
+        <td>Test</td>
+        <td><input type="text" id ="TestGrade" placeholder = "Insert Grades" value="79,75,70"></td>
+        <td><input type="text" id ="TestWeight" placeholder = "Insert Weight" value = "10"></td>
+    </tr>
+    <tr id = "4">
+        <td>Participation</td>
+        <td><input type="text" id ="ParticipationGrade" placeholder = "Insert Grades" value="69,65,60"></td>
+        <td><input type="text" id ="ParticipationWeight" placeholder = "Insert Weight" value = "10"></td>
+    </tr>
+    <tr id = "5">
+        <td>Classwork</td>
+        <td><input type="text" id ="ClassworkGrade" placeholder = "Insert Grades" value="59,55,50"></td>
+        <td><input type="text" id ="ClassworkWeight" placeholder = "Insert Weight" value = "10"></td>
+    </tr>
+</table>
+<table style="width:50%" align = "center">
+    <tr>
+        <th> Desired Grade </th>
+        <th> Weight of Final</th>
+    </tr>
+    <tr>
+        <td><input type ="text" id = "Desire" placeholder = "Desired Grade" value = "90"></td>
+        <td><input type = "text" id = "Final" placeholder = "Final's Weight" value = "50"></td>
+    </tr>
+</table>
+
+<button onclick="calculate()" id = "button" align = "center">Calculate Grade</button>
+<div id ="currentGrade" align = "center"> </div>
+<button onclick="FinalCalc()" id = "button" align = "center">Calculate Final Exam Needed</button>
+<div id ="desireGrade" align = "center"> </div>
+<button onclick="Reset()" id = "button" align = "center" >Reset</button>
+</body>
+</html>

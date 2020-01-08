@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    background-color: darksalmon;
+    font-family: "American Typewriter";
+
+}
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    font-family: "American Typewriter";
+}
+
